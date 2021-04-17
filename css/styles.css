@@ -137,7 +137,18 @@ h3 {
 }
 
 .conect-nav {
+  display: flex;
+  align-items: center;
   color: var(--main-text-color);
+}
+
+.icon {
+  /* margin-right: 10px; */
+  fill: currentColor;
+}
+
+.icon:hover {
+  fill: #2196f3;
 }
 
 /* Баннер */
@@ -145,7 +156,14 @@ h3 {
   padding-top: 200px;
   padding-bottom: 200px;
 
+  background: rgba(47, 48, 58, 0.1);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
   background-color: #2f303a;
+  background-image: url('../images/baner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 
