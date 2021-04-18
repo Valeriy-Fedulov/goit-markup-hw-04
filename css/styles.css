@@ -403,6 +403,10 @@ footer {
 .port-btn:focus {
   color: var(--white-title-color);
   background: var(--main-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Портфолио услуги*/
@@ -437,6 +441,12 @@ footer {
 .port .item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin: 15px;
+}
+
+.port .item:hover,
+.port .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .line-portf {
