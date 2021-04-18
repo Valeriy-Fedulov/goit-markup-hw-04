@@ -219,6 +219,13 @@ h3 {
   color: var(--title-color);
 }
 
+.icon-features {
+  background-color: #f4f3f9;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
 /* Чем мы занимаемся */
 .work {
   padding-bottom: 94px;
@@ -249,7 +256,7 @@ h3 {
 }
 
 .team-title {
-  padding: 30px;
+  padding: 30px 32px;
 }
 
 .team {
@@ -274,6 +281,12 @@ h3 {
   line-height: 1.19;
   color: var(--main-text-color);
   text-align: center;
+}
+
+.icon-team {
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 /* Адрес */
