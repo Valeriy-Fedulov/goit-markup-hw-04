@@ -5,6 +5,7 @@
   --title-color: #212121;
   --blacklogo-color: #000;
   --white-title-color: #fff;
+  --icon-color: #afb1b8;
 }
 
 html {
@@ -143,10 +144,12 @@ h3 {
 }
 
 .icon {
+  margin-right: 10px;
   fill: currentColor;
 }
 
-.icon:hover {
+.icon:hover,
+.icon:focus {
   fill: #2196f3;
 }
 
@@ -159,8 +162,16 @@ h3 {
   border: 1px solid #000000;
   box-sizing: border-box;
 
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2f303a;
-  background-image: url('../images/baner.jpg');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/baner.jpg');
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -256,6 +267,7 @@ h3 {
 
 .team-title {
   padding: 30px 32px;
+  background-color: var(--white-title-color);
 }
 
 .team {
@@ -284,14 +296,21 @@ h3 {
   text-align: center;
 }
 
+.icon-soc {
+  fill: var(--white-title-color);
+  --color1: var(--icon-color);
+}
+
+.icon-soc:hover,
+.icon-soc:focus {
+  fill: #2196f3;
+  --color1: var(--white-title-color);
+}
+
 .icon-flex {
   display: flex;
   justify-content: space-between;
-  color: #afb1b8;
-}
-
-.icon-team-li .icon:hover {
-  fill: var(--white-title-color);
+  color: var(--icon-color);
 }
 
 /* Постоянные клиенты */
@@ -304,9 +323,23 @@ h3 {
   height: 92px;
   width: 170px;
   padding: 16px 32px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.clients-box:hover,
+.clients-box:focus {
+  border-color: var(--main-color);
+}
+
+.icon-client {
+  fill: var(--icon-color);
+}
+
+.icon-client:hover,
+.icon-client:focus {
+  fill: var(--main-color);
 }
 
 /* Адрес */
@@ -355,7 +388,7 @@ footer {
   background-color: #2f303a;
 }
 
-.foot-adr {
+.footer-box .foot-adr {
   margin-top: 0;
   margin-bottom: 9px;
 
@@ -367,6 +400,25 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   color: var(--white-title-color);
+  margin-bottom: 20px;
+}
+
+.icon-join-flex {
+  display: flex;
+}
+
+.icon-join {
+  fill: rgba(255, 255, 255, 0.1);
+  --color1: var(--white-title-color);
+}
+
+.icon-join:hover,
+.icon-join:focus {
+  fill: #2196f3;
+}
+
+.icon-join-flex .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* -------------------------------------------------------------- */
